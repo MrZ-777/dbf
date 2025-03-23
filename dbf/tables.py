@@ -1758,7 +1758,7 @@ def retrieve_numeric(bytes, fielddef, *ignore):
         if cls != 'default':
             return cls()
     if cls == 'default':
-        if fielddef[DECIMALS] == 0:
+        if fielddef[DECIMALS] == 0 and string.isdigit():
             return string and int(string) or 0
         else:
             return string and float(string) or 0.0
