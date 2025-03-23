@@ -25,7 +25,7 @@ data = dict(
         license='BSD License',
         description='Pure python package for reading/writing dBase, FoxPro, and Visual FoxPro .dbf files (including memos)',
         long_description=long_desc,
-        url='https://github.com/MrZ-777/dbf',
+        url='https://github.com/ethanfurman/dbf',
         packages=['dbf', ],
         package_data={
            'dbf' : [
